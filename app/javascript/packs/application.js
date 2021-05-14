@@ -8,6 +8,11 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
+import "../../assets/stylesheets/custom.scss"
+
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
+
+//= require bootstrap-sprockets
+//= require_tree .
