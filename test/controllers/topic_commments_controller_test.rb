@@ -1,6 +1,6 @@
 require "test_helper"
 
-class MatterTest < ActiveSupport::TestCase
+class TopicCommmentsControllerTest < ActionDispatch::IntegrationTest
   # test "the truth" do
   #   assert true
   # end

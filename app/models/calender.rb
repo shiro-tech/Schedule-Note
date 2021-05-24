@@ -1,7 +1,7 @@
 class Calender < ApplicationRecord
-has_many :users
+belongs_to: :user
 # has_many :users, through: :calender_users
 # has_many :calender_users
-has_many :matters
+belongs_to :project
 
 end

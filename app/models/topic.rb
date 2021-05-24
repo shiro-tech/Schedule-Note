@@ -1,5 +1,6 @@
 class Topic < ApplicationRecord
 
 belongs_to :user
-belongs_to :matter
+belongs_to :project
+has_many: :topic_comments
 end
