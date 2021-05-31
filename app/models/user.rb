@@ -5,8 +5,8 @@ class User < ApplicationRecord
 
 # has_secure_password
 
-has_many :projects
-has_many :project_users, through: :projects, source: 'user'
+has_many :projects, through: :project_user
+has_many :project_users
 has_many :progresses
 has_many :topics
 has_many :calenders

@@ -1,0 +1,19 @@
+<div class="session">
+  <div class="container">
+    <div class="row">
+      <div class="session-container">
+        <%= form_for :session,url: login_path do |f| %>
+          <div class="form-group">
+            <%= f.label :email, class: 'text-white' %>
+            <%= f.text_field :email, class: 'form-control' %>
+          </div>
+
+          <div class="form-group">
+            <%= f.label :password, class: 'text-white' %>
+            <%= f.text_field :pasword, class: 'form-control' %>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
