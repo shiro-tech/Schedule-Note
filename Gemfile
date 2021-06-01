@@ -30,7 +30,8 @@ gem 'jquery-rails'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog-aws'
-
+#ログインの実装に便利なため
+gem 'device'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 

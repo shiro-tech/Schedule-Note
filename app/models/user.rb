@@ -3,7 +3,8 @@ class User < ApplicationRecord
 # validates :email
 # validates :password
 
-# has_secure_password
+#暗号化したパスワードをpassword_digestカラムに保存できるようにする
+has_secure_password
 
 has_many :projects, through: :project_user
 has_many :project_users

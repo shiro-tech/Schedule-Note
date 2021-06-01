@@ -4,13 +4,13 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.news(user_params)
-
+    @user = User.new(user_params)
+    # binding.pry
     if @user.save
       redirect_to root_path, success: '登録が完了しました'
-    # else
-    #   flash.now[:danger] = ""登録に失敗しました
-    #   render :new
+    else
+      flash.now[:danger] = '登録に失敗しました'
+      render :new
     end
   end
 
