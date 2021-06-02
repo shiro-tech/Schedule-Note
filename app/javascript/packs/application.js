@@ -7,12 +7,11 @@ import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
-
+// stylesheets適用のため
 import "../../assets/stylesheets/custom.scss"
-
+//= require jquery
 Rails.start()
-Turbolinks.start()
 ActiveStorage.start()
-
+//= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
