@@ -18,6 +18,38 @@
     <% flash.each do |key,value| %>
       <div class="alert alert-<%= key %>" role="alert"><%= value %></div>
     <% end %>
+
+    <nav class="navber navber-default navber-fixed-top navber-transparent">
+      <div class="container">
+        <%= link_to root_path do %>
+        <span><%= inage_tag "#", class:"navber-brand" %></span>
+        <% end %>
+        <ul class="nav navber-nav navber-right">
+          <% if logged_in? %>
+            <li>
+              <%= link_to projects_index_path do %>
+                <%= image tag "#" %>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to logout_path, method: :delete do %>
+                <%= image_tag "#" %>
+              <% end %>
+            </li>
+          <% else %>
+            <li>
+              <%= link_to new_user_path do %>
+                <%= image_tag "#" %>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to login_path do %>
+                <%= image_tag "#" %>
+              <% end %>
+            </li>
+          <% end %>
+        </ul>
+    
     <%= yield %>
     <!-- jQuery実装 -->
     <script>
