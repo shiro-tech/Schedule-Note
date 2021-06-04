@@ -25,11 +25,13 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
 gem 'bcrypt'
+gem 'bootstrap'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'fog-aws'
+gem 'uglifier'
 #ログインの実装に便利なため
 gem 'device'
 # Reduces boot times through caching; required in config/boot.rb

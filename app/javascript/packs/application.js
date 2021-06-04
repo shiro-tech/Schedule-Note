@@ -9,7 +9,11 @@ import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 // stylesheets適用のため
 import "../../assets/stylesheets/custom.scss"
-//= require jquery
+// qiitaをみて導入 6/3
+import 'bootstrap'
+import '../stylesheets/application';
+
+require("jquery")
 Rails.start()
 ActiveStorage.start()
 //= require turbolinks
