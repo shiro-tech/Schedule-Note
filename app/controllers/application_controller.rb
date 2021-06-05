@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
 #flash時のアクション
   add_flash_types :success, :info, :warning, :danger
 
+  helper_method :current_user, :logged_in?
 # ログイン有無の設定
   def current_user #現在ログインしているUserへ返すメソッド
     @current_user ||= User.find_by(id: session[:user_id])

@@ -2,11 +2,11 @@
   <div class="conteriner top-container">
     <% if logged_in? %>
       <div class="login_top">
-        <h1 class="top-user-name"><%= user.name + "さん"%></h1>
-        <h2 class="ログイン後"></h2>
+        <h1 class="top-user-name"><%= current_user.name + "さん"%></h1>
+        <h2 class="">ログイン後</h2>
       </div>
     <% else %>
-    
+
       <h1 class="top-text">Schedule-Note</h1>
       <h2 class="top-text">Login?/Sign in</h2>
 
